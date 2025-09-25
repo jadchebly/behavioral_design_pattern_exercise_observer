@@ -23,4 +23,5 @@ class CurrentConditionsDisplay(Observer):
         - Format humidity as integer (.0f)
         """
         # TODO: Your implementation here
-        pass
+        self.last_displayed = data
+        print(f"[Display] Temp: {data.temperature_c:.1f}°C | Humidity: {data.humidity_pct:.0f}%")

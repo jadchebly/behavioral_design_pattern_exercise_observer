@@ -27,5 +27,7 @@ def build_weather_system() -> WeatherStation:
     # Hint: Use station.attach(observer) for each observer
     # station.attach(display)
     # station.attach(heat_alert)
-
+    station.attach(display)
+    station.attach(heat_alert)
+    
     return station
